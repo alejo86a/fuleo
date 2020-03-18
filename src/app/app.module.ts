@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import { SeguridadModule } from './seguridad/seguridad.module';
 import { PantallaPrincipalComponent } from './pantalla-principal/pantalla-principal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule,
     AppRoutingModule,
     SeguridadModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

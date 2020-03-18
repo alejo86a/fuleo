@@ -1,1 +1,28 @@
-login
+<!-- Classes main-div and example-card are catagorized in .css file -->
+<div class="main-div">
+    <form [formGroup]="form">
+        <div class="col-md-3">
+            <img  src="./assets/logo.png"/>
+        </div>
+        <div class="col-md-3">
+            <input id="nombreDeUsuario"
+                class="form-control select-standard"
+                placeholder="Email*"
+                formControlName="nombreDeUsuario">
+            <div id="nombreDeUsuarioError" validationError [touched]="form.get('nombreDeUsuario').touched" [inputErrors]="form.get('nombreDeUsuario').errors"
+            [errorDefs]="ERROR_DEFS.nombreDeUsuario"></div>
+        </div>        
+        <div class="col-md-3">
+            <input id="contrasena"
+                class="form-control select-standard"
+                placeholder="Password*"
+                formControlName="contrasena">
+            <div id="contrasenaError" validationError [touched]="form.get('contrasena').touched" [inputErrors]="form.get('contrasena').errors"
+            [errorDefs]="ERROR_DEFS.contrasena"></div>
+        </div>
+        <div class="col-md-3">
+            <button id="login" class="btn btn-secondary" type="submit" (click)="login()">Login</button>
+        </div>  
+        {{this.form.valid}} 
+    </form>
+</div>
