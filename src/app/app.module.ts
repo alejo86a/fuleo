@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { SeguridadModule } from './seguridad/seguridad.module';
 import { PantallaPrincipalComponent } from './pantalla-principal/pantalla-principal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 
@@ -23,8 +22,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     SeguridadModule,
     BrowserAnimationsModule,
-    MatCardModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

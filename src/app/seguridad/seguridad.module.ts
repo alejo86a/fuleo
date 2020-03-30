@@ -5,6 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 import { SecurityService } from '../shared/services/security.service';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -15,7 +18,12 @@ import { SecurityService } from '../shared/services/security.service';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,    
-    SharedModule
+    SharedModule,
+    // begining angular material components imported
+    MatGridListModule,
+    MatButtonModule,
+    MatInputModule,
+    // end angular material components imported
   ],
   providers: [
     SecurityService

@@ -25,9 +25,7 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     if(this.form.valid){
-      console.log(this.form.value)
-      this.securityService.login(this.form.value).subscribe((data: any) => console.log(data));;
-
+      this.securityService.login({...this.form.value}).subscribe((data: String) => console.log(data));
     }
 
   }
