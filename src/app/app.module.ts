@@ -9,6 +9,7 @@ import { PantallaPrincipalComponent } from './pantalla-principal/pantalla-princi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { CitasModule } from './citas/citas.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SharedModule } from './shared/shared.module';
     RouterModule,
     AppRoutingModule,
     SeguridadModule,
+    CitasModule,
     BrowserAnimationsModule,
     SharedModule,
   ],

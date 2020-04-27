@@ -7,7 +7,7 @@
             <mat-grid-tile [colspan]="1" [rowspan]="2">
                 <img  src="./assets/logo.png"/>
             </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-grid-tile [colspan]="1" [rowspan]="2">
                 <mat-form-field class="example-full-width">
                     <mat-label>Email</mat-label>
                     <input id="nombreDeUsuario"
@@ -15,9 +15,12 @@
                         placeholder="Email*"
                         formControlName="nombreDeUsuario"
                         matInput>
+                        <div validationError [touched]="form.get('nombreDeUsuario').touched" [inputErrors]="form.get('nombreDeUsuario').errors" [errorDefs]="ERROR_DEFS.nombreDeUsuario"></div>
                 </mat-form-field>                
-                <div id="nombreDeUsuarioError" validationError [touched]="form.get('nombreDeUsuario').touched" [inputErrors]="form.get('nombreDeUsuario').errors"
-                [errorDefs]="ERROR_DEFS.nombreDeUsuario"></div>
+                <!-- <div id="nombreDeUsuarioError" validationError [touched]="form.get('nombreDeUsuario').touched" [inputErrors]="form.get('nombreDeUsuario').errors"
+                [errorDefs]="ERROR_DEFS.nombreDeUsuario"></div> -->
+                {{form.get('nombreDeUsuario').touched}}
+                {{form.get('nombreDeUsuario').errors[0]}}
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
                 <mat-form-field class="example-full-width">
@@ -28,8 +31,8 @@
                         formControlName="contrasena"
                         matInput>
                 </mat-form-field>
-                <div id="contrasenaError" validationError [touched]="form.get('contrasena').touched" [inputErrors]="form.get('contrasena').errors"
-                [errorDefs]="ERROR_DEFS.contrasena"></div>
+                <!-- <div id="contrasenaError" validationError [touched]="form.get('contrasena').touched" [inputErrors]="form.get('contrasena').errors"
+                [errorDefs]="ERROR_DEFS.contrasena"></div> -->
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
                 <button id="login" mat-flat-button color="primary" type="submit" (click)="login()">Login</button>

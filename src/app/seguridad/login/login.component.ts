@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ERROR_DEFS } from '../../shared/validation-error/errors-defs';
+import { ERROR_DEFS } from '../../shared/components/validation-error/errors-defs';
 import { SecurityService } from 'src/app/shared/services/security.service';
 
 
@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
+    console.log(this.form);
     if(this.form.valid){
       this.securityService.login({...this.form.value}).subscribe((data: String) => console.log(data));
     }
