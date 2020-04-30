@@ -17,7 +17,7 @@ import {MatInputModule} from '@angular/material/input';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule,    
+    CommonModule,
     SharedModule,
     // begining angular material components imported
     MatGridListModule,
