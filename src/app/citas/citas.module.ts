@@ -7,16 +7,21 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { SharedModule } from '../shared/shared.module';
+import { TopComponent } from './top/top.component';
+import { ListaCitasComponent } from './lista-citas/lista-citas.component';
+import { CitaComponent } from './cita/cita.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
 @NgModule({
-  declarations: [SocialMediaComponent, MenuComponent, HomeComponent],
+  declarations: [SocialMediaComponent, MenuComponent, HomeComponent, TopComponent, ListaCitasComponent, CitaComponent],
   imports: [
     CommonModule,
     MatSidenavModule,
     MatDividerModule,
-    MatListModule,     
+    MatListModule,   
+    MatCardModule,  
     SharedModule,
   ]
 })
