@@ -1,4 +1,7 @@
 .top-card {
-    width:30%;
-    height: 100%;
+    width:27%;
+    height: 80%;
+    background-color: grey;
+    float: left;
+    margin: 1.5% 3% 3% 3%;
 }
