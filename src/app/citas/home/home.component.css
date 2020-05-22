@@ -7,10 +7,10 @@
 .container {
     width: 85vw;
     height: 100vh;
-    background-color: #e6eff7;
+    background-color: #e6eff8;
 }
 .top {
     width: 100%;
     height: 25%;
-    background-color: red;
+    background-color:#e6eff8;
 }

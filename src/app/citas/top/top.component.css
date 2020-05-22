@@ -1,7 +1,12 @@
-.top-card {
-    width:27%;
-    height: 80%;
-    background-color: grey;
+.top-card 
+{
+    width:26.5%;
+    height: 70%;
+    border-radius: 0px;
+    border: #add2e4 3px solid;
+    -moz-border-radius: 6px;
+    -webkit-border-radius:6px;
+    background-color: #eff8ff;
     float: left;
     margin: 1.5% 3% 3% 3%;
 }
