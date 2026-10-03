@@ -1,27 +1,34 @@
 # fuleo.co
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+An Angular 9 single-page web application for a "citas" (appointments/dates) scheduling flow, built with Angular Material.
 
-## Development server
+## What this is
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This looks like a personal/practice project (an early-stage product idea called "fuleo.co") rather than a finished production app. It includes:
 
-## Code scaffolding
+- A login screen (`seguridad` module)
+- A main dashboard shell (`pantalla-principal`)
+- A "citas" (appointments) module with sub-features: a list of appointments (`lista-citas`), an appointment detail view (`cita`), a home/menu layout, and "social media" and "top" components
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There's no backend wired up in the code visible in this repo (no real HTTP services calling an API beyond a placeholder `User` model), and the app still carries the stock Angular CLI scaffold (karma/protractor configs, default lint rules) on top of the custom feature modules.
 
-## Build
+## Tech stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- **Angular 9** (with a couple of packages bumped to `@angular/core` ~11) + TypeScript
+- **Angular Material** / Angular CDK for UI components
+- **RxJS**
+- Karma + Jasmine for unit tests, Protractor for e2e tests (default Angular CLI setup)
 
-## Running unit tests
+## Running it
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+npm start      # ng serve --disableHostCheck, served at http://localhost:4200
+npm run build  # production build output to dist/
+npm test       # unit tests via Karma
+npm run e2e    # end-to-end tests via Protractor
+```
 
-## Running end-to-end tests
+## Honest context
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This repository appears to be a practice/exploration project rather than a maintained production service — there's no CI, no deployed backend, and the dependency versions date back to ~2020 (Angular 9). Treat it as a portfolio/learning piece rather than an actively supported app.
